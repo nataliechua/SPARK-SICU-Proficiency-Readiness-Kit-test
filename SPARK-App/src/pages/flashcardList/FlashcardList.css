@@ -22,10 +22,11 @@
     z-index: 999;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform: rotateY(180deg) translateZ(2px);
-    transform: rotateY(180deg) translateZ(2px);
-    /* -webkit-transform: translate3d(0px, 0px, 0px);
-    transform: translate3d(0px, 0px, 0px);  */
+    -webkit-transform: translateZ(2px);
+    transform: translateZ(2px);
+    z-index: 999;
+    -webkit-transform: translate3d(0px, 0px, 10px);
+    transform: translate3d(0px, 0px, 10px); 
 }
 
 .testBox {
