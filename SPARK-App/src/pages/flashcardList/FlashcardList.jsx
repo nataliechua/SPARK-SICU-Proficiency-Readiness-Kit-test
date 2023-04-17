@@ -4,7 +4,6 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import axios from 'axios'
 import Flashcard from '../../components/flashcard/Flashcard';
-import NewFlashcard from '../../components/newFlashcard/NewFlashcard';
 import Carousel from 'react-material-ui-carousel';
 import './FlashcardList.css'
 import { useLocation, useNavigate, Link } from 'react-router-dom';
@@ -157,7 +156,7 @@ function FlashcardList() {
                                     flashcards.map(
                                         (flashcard, idx) => {
                                             return (
-                                                <NewFlashcard key={flashcard._id} 
+                                                <Flashcard key={flashcard._id} 
                                                         flashcard={flashcard} 
                                                         allFlashcardsList={allFlashcards} 
                                                         setAllFlashcards={setAllFlashcards}
