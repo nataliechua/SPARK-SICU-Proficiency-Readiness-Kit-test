@@ -174,7 +174,20 @@ function FlashcardList() {
                             </Carousel>
                         </Box>
 
-
+                        <div className="testBox">
+                            hi 
+                            <br></br> 
+                            hi
+                            hi 
+                            <br></br> 
+                            hi
+                            hi 
+                            <br></br> 
+                            hi
+                            hi 
+                            <br></br> 
+                            hi
+                        </div>
                     </div>
                 )
             }
