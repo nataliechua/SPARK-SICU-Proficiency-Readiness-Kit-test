@@ -19,14 +19,13 @@
 .dropdown {
     margin-right: 20px;
     position: relative;
-    z-index: 999;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform: translateZ(2px);
-    transform: translateZ(2px);
-    z-index: 999;
-    -webkit-transform: translate3d(0px, 0px, 10px);
-    transform: translate3d(0px, 0px, 10px); 
+    -webkit-transform: translateZ(1000px);
+    transform: translateZ(1000px);
+    z-index: 99999;
+    -webkit-transform: translate3d(0px, 0px, 10000px);
+    transform: translate3d(0px, 0px, 10000px); 
 }
 
 .testBox {
