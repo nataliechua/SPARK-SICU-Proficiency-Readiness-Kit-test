@@ -55,13 +55,6 @@ function FlashcardList() {
         }
     }
 
-    let flashcard = {
-        _id: "1",
-        question: "Question",
-        answer: " Answer \n Answer \n Answer \n Answer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\n",
-        category: "Cardio"
-    }
-
     useEffect(() => {
         axios.get(import.meta.env.VITE_API_URL + '/flashcards/')
         .then((res) => {
@@ -149,7 +142,7 @@ function FlashcardList() {
                             }
                         </div>
                         
-                        {/* <Box sx={{display: "flex", justifyContent: "center"}}>
+                        <Box sx={{display: "flex", justifyContent: "center"}} className="flashcardContainer">
                             <Carousel
                                 sx={{p: "10px 3px 0px", width: "90%", maxWidth: "600px"}}
                                 swipe={false}
@@ -164,7 +157,7 @@ function FlashcardList() {
                                     flashcards.map(
                                         (flashcard, idx) => {
                                             return (
-                                                <Flashcard key={flashcard._id} 
+                                                <NewFlashcard key={flashcard._id} 
                                                         flashcard={flashcard} 
                                                         allFlashcardsList={allFlashcards} 
                                                         setAllFlashcards={setAllFlashcards}
@@ -180,26 +173,11 @@ function FlashcardList() {
                                     )
                                 }
                             </Carousel>
-                        </Box> */}
+                        </Box>
 
-                        {/* <div className="testBox">
-                            hi 
-                            <br></br> 
-                            hi
-                            hi 
-                            <br></br> 
-                            hi
-                            hi 
-                            <br></br> 
-                            hi
-                            hi 
-                            <br></br> 
-                            hi
-                        </div> */}
-
-                        <div className="flashcardContainer">
+                        {/* <div className="flashcardContainer">
                              <NewFlashcard flashcard={flashcard}/>
-                        </div>
+                        </div> */}
                     </div>
                 )
             }
