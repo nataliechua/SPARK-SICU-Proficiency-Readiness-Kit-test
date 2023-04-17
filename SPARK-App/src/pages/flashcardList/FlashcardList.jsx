@@ -197,8 +197,9 @@ function FlashcardList() {
                             hi
                         </div> */}
 
-
-                        <NewFlashcard flashcard={flashcard}/>
+                        <div className="flashcardContainer">
+                             <NewFlashcard flashcard={flashcard}/>
+                        </div>
                     </div>
                 )
             }
