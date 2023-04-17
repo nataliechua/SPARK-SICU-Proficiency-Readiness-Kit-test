@@ -7,8 +7,11 @@
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
     background-color: white;
 
+    -webkit-transform: rotateY(var(--rotate-y, 0));
     transform: rotateY(var(--rotate-y, 0));
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -webkit-transition: 150ms;
     transition: 150ms;
 }
 
@@ -24,12 +27,14 @@
 }
 
 .card .front {
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     backface-visibility: hidden;
 }
 
 .card .back {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg) translateZ(1px);
+    transform: rotateY(rotateY(180deg)) translateZ(1px);
     backface-visibility: hidden; 
     height: 100%;
     width: 100%;
