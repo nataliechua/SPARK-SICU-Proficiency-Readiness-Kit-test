@@ -100,7 +100,7 @@ function FlashcardList() {
                 ) :
                 (
                     <div className="wrapper">
-                        {/* <div className="dropdownContainerDiv">
+                        <div className="dropdownContainerDiv">
                             <div className="dropdown">
                                 <FormControl sx={{width: "200px"}}>
                                     <Select value={dropdownValue} 
@@ -147,7 +147,7 @@ function FlashcardList() {
                                         Add Flashcard
                                     </Button> : null
                             }
-                        </div> */}
+                        </div>
                         
                         {/* <Box sx={{display: "flex", justifyContent: "center"}}>
                             <Carousel
@@ -182,7 +182,7 @@ function FlashcardList() {
                             </Carousel>
                         </Box> */}
 
-                        <div className="testBox">
+                        {/* <div className="testBox">
                             hi 
                             <br></br> 
                             hi
@@ -195,7 +195,7 @@ function FlashcardList() {
                             hi 
                             <br></br> 
                             hi
-                        </div>
+                        </div> */}
 
 
                         <NewFlashcard flashcard={flashcard}/>
