@@ -20,17 +20,6 @@
     margin-right: 20px;
     position: relative;
     z-index: 999;
-    /* -webkit-transform: translateZ(1px);
-    transform:  translateZ(1px);
-    -webkit-transform: translate3d(0px, 0px, 1000px);
-    transform: translate3d(0px, 0px, 1000px); */
-}
-
-.testBox {
-    background-color: yellow;
-    height: 100px;
-    width: 100px;
-    overflow-y: auto;
 }
 
 .flashcardContainer {

@@ -174,10 +174,6 @@ function FlashcardList() {
                                 }
                             </Carousel>
                         </Box>
-
-                        {/* <div className="flashcardContainer">
-                             <NewFlashcard flashcard={flashcard}/>
-                        </div> */}
                     </div>
                 )
             }
