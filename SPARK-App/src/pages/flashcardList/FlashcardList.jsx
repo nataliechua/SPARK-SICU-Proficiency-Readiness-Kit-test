@@ -4,6 +4,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import axios from 'axios'
 import Flashcard from '../../components/flashcard/Flashcard';
+import NewFlashcard from '../../components/newFlashcard/NewFlashcard';
 import Carousel from 'react-material-ui-carousel';
 import './FlashcardList.css'
 import { useLocation, useNavigate, Link } from 'react-router-dom';
@@ -52,6 +53,13 @@ function FlashcardList() {
         } else {
             setFlashcards(allFlashcards)   
         }
+    }
+
+    let flashcard = {
+        _id: "1",
+        question: "Question",
+        answer: " Answer \n Answer \n Answer \n Answer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\n",
+        category: "Cardio"
     }
 
     useEffect(() => {
@@ -141,7 +149,7 @@ function FlashcardList() {
                             }
                         </div> */}
                         
-                        <Box sx={{display: "flex", justifyContent: "center"}}>
+                        {/* <Box sx={{display: "flex", justifyContent: "center"}}>
                             <Carousel
                                 sx={{p: "10px 3px 0px", width: "90%", maxWidth: "600px"}}
                                 swipe={false}
@@ -172,7 +180,7 @@ function FlashcardList() {
                                     )
                                 }
                             </Carousel>
-                        </Box>
+                        </Box> */}
 
                         <div className="testBox">
                             hi 
@@ -188,6 +196,9 @@ function FlashcardList() {
                             <br></br> 
                             hi
                         </div>
+
+
+                        <NewFlashcard flashcard={flashcard}/>
                     </div>
                 )
             }

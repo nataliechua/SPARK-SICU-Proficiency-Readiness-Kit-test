@@ -1,4 +1,4 @@
-.card {
+/* .card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,17 +57,17 @@
   .card .back {
     position: absolute;
     /* anything that is flipped 180 deg is going to be hidden */
-    width: 100%;
+    /* width: 100%;
     -webkit-transform: rotateY(180deg) translateZ(var(--translate-z, 0)); 
     transform: rotateY(180deg) translateZ(var(--translate-z, 0)); 
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    font-size: 18px;
-  }
+    font-size: 18px; */
+  /* } */
 
-  a, a:hover {
-    color: inherit; /* Set the link color to inherit from its parent element */
-    text-decoration: none; /* Remove the underline from the link */
+  /* a, a:hover {
+    color: inherit; 
+    text-decoration: none; 
   }
 
 .cardText {
@@ -82,4 +82,4 @@
   position: absolute;
   top: 15px;
   right: 15px;
-}
+}  */
